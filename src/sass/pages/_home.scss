@@ -1,1 +1,45 @@
 /* home */
+
+@use "../abstracts/variables" as var;
+
+.ticket {
+    background-color: var.$bg-color;
+    width: 800px;
+    height: 330px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1em;
+}
+
+.hori {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hori__svg, .hori__tues, .hori__reunion, .hori__pioneers, .hori__platform {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.hori__svg {
+    padding: 0;
+    border: 1px solid var.$text-color;
+}
+
+.hori__abbey, .hori__lessees, .hori__tues, .hori__pioneers {
+    border-bottom: 1px solid var.$text-color;
+}
+
+
+.vert {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.vert__metro, .vert__eve, .vert__retain {
+    border-left: 1px solid var.$text-color;
+}
+
+.vert {
+    writing-mode: vertical-rl;
+}
