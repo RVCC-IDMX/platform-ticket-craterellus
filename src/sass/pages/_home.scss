@@ -3,6 +3,9 @@
 @use "../abstracts/variables" as var;
 @use "../base/typography" as type;
 
+
+/* Grids */
+
 .ticket {
     background-color: var.$bg-color;
     width: 800px;
@@ -16,6 +19,57 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+.vert {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+/* Fonts */
+
+.hori__abbey {
+    font-family: type.$abbey-font;
+}
+
+.hori__lessees {
+    font-family: type.$lessees-font;
+}
+
+.hori__tues {
+    font-family: type.$eve-font;
+}
+
+.hori__reunion {
+    font-family: type.$reunion-font;
+}
+
+.hori__pioneers {
+    font-family: type.$pioneers-font;
+}
+
+.hori__platform {
+    font-family: type.$platform-font;
+}
+
+.vert__metro {
+    font-family: type.$metro-font;
+}
+
+.vert__eve {
+    font-family: type.$eve-font;
+}
+
+.vert__retain {
+    font-family: type.$retain-font;
+}
+
+.vert__globe {
+    font-family: type.$globe-font;
+}
+
+
+/* Placement- Horizontal */
 
 .hori__svg, .hori__tues, .hori__reunion, .hori__pioneers, .hori__platform {
     grid-column-start: 1;
@@ -31,19 +85,8 @@
     border-bottom: 1px solid var.$text-color;
 }
 
-.hori__tues {
-    font-family: type.$eve-font;
-}
+/* Placement- Vertical */
 
-.hori__pioneers {
-    font-family: type.$pioneers-font;
-}
-
-
-.vert {
-    display: grid;
-    grid-template-columns: 1fr;
-}
 
 .vert__metro, .vert__eve, .vert__retain {
     border-left: 1px solid var.$text-color;
