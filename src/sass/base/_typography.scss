@@ -1,8 +1,67 @@
 /* typography */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+// format('opentype')
 
-$font: "Poppins", serif;
+@font-face {
+  font-family: 'Abril';
+  font-style: normal;
+  src: url('../../fonts/AbrilFatface-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Alegreya';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../../fonts/Alegreya-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Buttershine';
+  src: url('../../fonts/BUTTERSHINE_SERIF.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('../../fonts/EBGaramond-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Grewmoon';
+  src: url('../../fonts/grewmoon.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MomsTypewriter';
+  src: url('../../fonts/MomsTypewriter.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 100 700;
+  src: url('../../fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Showguide';
+  src: url('../../fonts/showguide.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../../fonts/WorkSans-Medium.otf') format('opentype');
+}
+
+$font: serif;
+$abbey-font: "Alegreya", serif;
+$lessees-font: "EB Garamond", serif;
+$tues-font: "Roboto", serif;
+$reunion-font: "Work Sans", serif;
+$pioneers-font: "Showguide", serif;
+$platform-font: "Grewmoon", serif;
+$metro-font: "Buttershine", serif;
+$eve-font: "Abril", serif;
+$retain-font: "MomsTypewriter", serif;
+$globe-font: $tues-font, serif;
 
 // body font styling vars
 $body-font-size: 120%;

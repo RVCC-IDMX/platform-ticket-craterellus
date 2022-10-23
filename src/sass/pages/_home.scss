@@ -1,6 +1,7 @@
 /* home */
 
 @use "../abstracts/variables" as var;
+@use "../base/typography" as type;
 
 .ticket {
     background-color: var.$bg-color;
@@ -28,6 +29,14 @@
 
 .hori__abbey, .hori__lessees, .hori__tues, .hori__pioneers {
     border-bottom: 1px solid var.$text-color;
+}
+
+.hori__tues {
+    font-family: type.$eve-font;
+}
+
+.hori__pioneers {
+    font-family: type.$pioneers-font;
 }
 
 
